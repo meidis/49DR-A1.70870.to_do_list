@@ -1,0 +1,27 @@
+﻿<Window x:Class="Zadanie_3.AddNewWorkItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Title="AddNewWorkItemWindow" Height="400" Width="450px">
+    <Grid>
+        <StackPanel>
+            <Label HorizontalAlignment="Center" FontSize="18px">Dodaj nowe zadanie</Label>
+            <Separator></Separator>
+            <WrapPanel Margin="15px" HorizontalAlignment="Left">
+                <Label HorizontalContentAlignment="Left" Width="115px">Tytuł</Label>
+                <TextBox Name="title" Width="250px"></TextBox>
+            </WrapPanel>
+            <WrapPanel Margin="15px" HorizontalAlignment="Left">
+                <Label Width="115px">Data zakończenia</Label>
+                <DatePicker Name="endDate" Width="250px"></DatePicker>
+            </WrapPanel>
+            <WrapPanel VerticalAlignment="Stretch" Margin="15px" HorizontalAlignment="Left">
+                <Label Width="115px">Opis</Label>
+                <RichTextBox Name="description" Width="250px"></RichTextBox>
+            </WrapPanel>
+            <Button Click="onAddNewButtonClick" Margin="15px" Width="250px" Content="Dodaj"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
